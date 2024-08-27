@@ -1,0 +1,18 @@
+The dataset has 33 columns, including the target variable diagnosis and 32 feature columns. The feature columns seem to be divided into three categories: mean, standard error, and worst values for each of the 10 features (radius, texture, perimeter, area, smoothness, compactness, concavity, concave points, symmetry, and fractal dimension).
+
+Data cleaning
+Checked for missing values, dropped Unnamed: 32 column and converted the diagnosis column to a categorical variable.
+
+The output shows the summary statistics for each column in the dataset.
+
+Here are some observations:
+
+The id column has a large range of values, indicating that it's likely a unique identifier for each sample.
+The mean values for the radius_mean, texture_mean, perimeter_mean, and area_mean columns are relatively high, indicating that the tumors are generally large.
+The standard deviations for these columns are also relatively high, suggesting that there is significant variation in the size of the tumors.
+The smoothness_mean, compactness_mean, concavity_mean, and concave points_mean columns have lower mean values, indicating that the tumors are generally not very smooth, compact, or concave.
+The symmetry_mean column has a higher mean value, indicating that the tumors are generally more symmetric.
+The fractal_dimension_mean column has a relatively low mean value, indicating that the tumors have a relatively low fractal dimension.
+The worst-case values for each feature (e.g., radius_worst, texture_worst, etc.) have similar patterns to the mean values, but with slightly higher means and standard deviations.
+
+
